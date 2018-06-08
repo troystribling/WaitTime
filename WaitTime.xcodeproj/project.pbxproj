@@ -12,7 +12,48 @@
 		0588E50120C865CE001DA514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0588E4FF20C865CE001DA514 /* Main.storyboard */; };
 		0588E50320C865CF001DA514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0588E50220C865CF001DA514 /* Assets.xcassets */; };
 		0588E50620C865CF001DA514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0588E50420C865CF001DA514 /* LaunchScreen.storyboard */; };
+		0588E50E20C86A6D001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
+		0588E51720C87197001DA514 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588E51620C87197001DA514 /* IntentHandler.swift */; };
+		0588E52020C87197001DA514 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0588E51F20C87197001DA514 /* IntentsUI.framework */; };
+		0588E52320C87197001DA514 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588E52220C87197001DA514 /* IntentViewController.swift */; };
+		0588E52620C87197001DA514 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0588E52420C87197001DA514 /* MainInterface.storyboard */; };
+		0588E52D20C87197001DA514 /* WaitTimeIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51420C87197001DA514 /* WaitTimeIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0588E53B20C8ACB9001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
+		0588E53C20C8ACBA001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
+		05E8FD2820C9E3A300EE517D /* WaitTimeIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0588E52820C87197001DA514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0588E4F020C865CD001DA514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0588E51C20C87197001DA514;
+			remoteInfo = WaitTimeIntentsUI;
+		};
+		0588E52B20C87197001DA514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0588E4F020C865CD001DA514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0588E51320C87197001DA514;
+			remoteInfo = WaitTimeIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0588E53420C87197001DA514 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05E8FD2820C9E3A300EE517D /* WaitTimeIntentsUI.appex in Embed App Extensions */,
+				0588E52D20C87197001DA514 /* WaitTimeIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0588E4F820C865CD001DA514 /* WaitTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +63,18 @@
 		0588E50220C865CF001DA514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0588E50520C865CF001DA514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0588E50720C865CF001DA514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WaitTimeIntents.intentdefinition; sourceTree = "<group>"; };
+		0588E50F20C86D1B001DA514 /* WaitTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTime.entitlements; sourceTree = "<group>"; };
+		0588E51420C87197001DA514 /* WaitTimeIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WaitTimeIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0588E51620C87197001DA514 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		0588E51820C87197001DA514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WaitTimeIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0588E51F20C87197001DA514 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		0588E52220C87197001DA514 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		0588E52520C87197001DA514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0588E52720C87197001DA514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0588E53720C898BC001DA514 /* WaitTimeIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimeIntents.entitlements; sourceTree = "<group>"; };
+		0588E53820C8993D001DA514 /* WaitTimeIntentsUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimeIntentsUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +85,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0588E51120C87197001DA514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0588E51A20C87197001DA514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0588E52020C87197001DA514 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				0588E4FA20C865CD001DA514 /* WaitTime */,
+				0588E51520C87197001DA514 /* WaitTimeIntents */,
+				0588E52120C87197001DA514 /* WaitTimeIntentsUI */,
+				0588E51E20C87197001DA514 /* Frameworks */,
 				0588E4F920C865CD001DA514 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				0588E4F820C865CD001DA514 /* WaitTime.app */,
+				0588E51420C87197001DA514 /* WaitTimeIntents.appex */,
+				0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +127,45 @@
 		0588E4FA20C865CD001DA514 /* WaitTime */ = {
 			isa = PBXGroup;
 			children = (
+				0588E50F20C86D1B001DA514 /* WaitTime.entitlements */,
 				0588E4FB20C865CE001DA514 /* AppDelegate.swift */,
 				0588E4FD20C865CE001DA514 /* ViewController.swift */,
 				0588E4FF20C865CE001DA514 /* Main.storyboard */,
 				0588E50220C865CF001DA514 /* Assets.xcassets */,
 				0588E50420C865CF001DA514 /* LaunchScreen.storyboard */,
+				0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */,
 				0588E50720C865CF001DA514 /* Info.plist */,
 			);
 			path = WaitTime;
+			sourceTree = "<group>";
+		};
+		0588E51520C87197001DA514 /* WaitTimeIntents */ = {
+			isa = PBXGroup;
+			children = (
+				0588E53720C898BC001DA514 /* WaitTimeIntents.entitlements */,
+				0588E51620C87197001DA514 /* IntentHandler.swift */,
+				0588E51820C87197001DA514 /* Info.plist */,
+			);
+			path = WaitTimeIntents;
+			sourceTree = "<group>";
+		};
+		0588E51E20C87197001DA514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0588E51F20C87197001DA514 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0588E52120C87197001DA514 /* WaitTimeIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				0588E53820C8993D001DA514 /* WaitTimeIntentsUI.entitlements */,
+				0588E52220C87197001DA514 /* IntentViewController.swift */,
+				0588E52420C87197001DA514 /* MainInterface.storyboard */,
+				0588E52720C87197001DA514 /* Info.plist */,
+			);
+			path = WaitTimeIntentsUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +178,52 @@
 				0588E4F420C865CD001DA514 /* Sources */,
 				0588E4F520C865CD001DA514 /* Frameworks */,
 				0588E4F620C865CD001DA514 /* Resources */,
+				0588E53420C87197001DA514 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0588E52920C87197001DA514 /* PBXTargetDependency */,
+				0588E52C20C87197001DA514 /* PBXTargetDependency */,
 			);
 			name = WaitTime;
 			productName = WaitTime;
 			productReference = 0588E4F820C865CD001DA514 /* WaitTime.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0588E51320C87197001DA514 /* WaitTimeIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0588E53120C87197001DA514 /* Build configuration list for PBXNativeTarget "WaitTimeIntents" */;
+			buildPhases = (
+				0588E51020C87197001DA514 /* Sources */,
+				0588E51120C87197001DA514 /* Frameworks */,
+				0588E51220C87197001DA514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaitTimeIntents;
+			productName = WaitTimeIntents;
+			productReference = 0588E51420C87197001DA514 /* WaitTimeIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0588E51C20C87197001DA514 /* WaitTimeIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0588E52E20C87197001DA514 /* Build configuration list for PBXNativeTarget "WaitTimeIntentsUI" */;
+			buildPhases = (
+				0588E51920C87197001DA514 /* Sources */,
+				0588E51A20C87197001DA514 /* Frameworks */,
+				0588E51B20C87197001DA514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaitTimeIntentsUI;
+			productName = WaitTimeIntentsUI;
+			productReference = 0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +237,30 @@
 				TargetAttributes = {
 					0588E4F720C865CD001DA514 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					0588E51320C87197001DA514 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					0588E51C20C87197001DA514 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,6 +278,8 @@
 			projectRoot = "";
 			targets = (
 				0588E4F720C865CD001DA514 /* WaitTime */,
+				0588E51320C87197001DA514 /* WaitTimeIntents */,
+				0588E51C20C87197001DA514 /* WaitTimeIntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +295,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0588E51220C87197001DA514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0588E51B20C87197001DA514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0588E52620C87197001DA514 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,10 +319,42 @@
 			files = (
 				0588E4FE20C865CE001DA514 /* ViewController.swift in Sources */,
 				0588E4FC20C865CE001DA514 /* AppDelegate.swift in Sources */,
+				0588E50E20C86A6D001DA514 /* WaitTimeIntents.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0588E51020C87197001DA514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0588E53B20C8ACB9001DA514 /* WaitTimeIntents.intentdefinition in Sources */,
+				0588E51720C87197001DA514 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0588E51920C87197001DA514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0588E53C20C8ACBA001DA514 /* WaitTimeIntents.intentdefinition in Sources */,
+				0588E52320C87197001DA514 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0588E52920C87197001DA514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0588E51C20C87197001DA514 /* WaitTimeIntentsUI */;
+			targetProxy = 0588E52820C87197001DA514 /* PBXContainerItemProxy */;
+		};
+		0588E52C20C87197001DA514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0588E51320C87197001DA514 /* WaitTimeIntents */;
+			targetProxy = 0588E52B20C87197001DA514 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0588E4FF20C865CE001DA514 /* Main.storyboard */ = {
@@ -157,6 +371,14 @@
 				0588E50520C865CF001DA514 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0588E52420C87197001DA514 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0588E52520C87197001DA514 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,7 +501,9 @@
 		0588E50B20C865CF001DA514 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaitTime/WaitTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HZEX459C37;
 				INFOPLIST_FILE = WaitTime/Info.plist;
@@ -297,7 +521,9 @@
 		0588E50C20C865CF001DA514 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaitTime/WaitTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HZEX459C37;
 				INFOPLIST_FILE = WaitTime/Info.plist;
@@ -307,6 +533,86 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = us.gnos.WaitTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0588E52F20C87197001DA514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WaitTimeIntentsUI/WaitTimeIntentsUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZEX459C37;
+				INFOPLIST_FILE = WaitTimeIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.gnos.WaitTime.WaitTimeIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0588E53020C87197001DA514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WaitTimeIntentsUI/WaitTimeIntentsUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZEX459C37;
+				INFOPLIST_FILE = WaitTimeIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.gnos.WaitTime.WaitTimeIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0588E53220C87197001DA514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WaitTimeIntents/WaitTimeIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZEX459C37;
+				INFOPLIST_FILE = WaitTimeIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.gnos.WaitTime.WaitTimeIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0588E53320C87197001DA514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WaitTimeIntents/WaitTimeIntents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZEX459C37;
+				INFOPLIST_FILE = WaitTimeIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.gnos.WaitTime.WaitTimeIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +635,24 @@
 			buildConfigurations = (
 				0588E50B20C865CF001DA514 /* Debug */,
 				0588E50C20C865CF001DA514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0588E52E20C87197001DA514 /* Build configuration list for PBXNativeTarget "WaitTimeIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0588E52F20C87197001DA514 /* Debug */,
+				0588E53020C87197001DA514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0588E53120C87197001DA514 /* Build configuration list for PBXNativeTarget "WaitTimeIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0588E53220C87197001DA514 /* Debug */,
+				0588E53320C87197001DA514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
