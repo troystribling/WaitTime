@@ -74,7 +74,7 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Your wait time will be ${waitTime} minutes at ${location}.</string>
+						<string>Your wait time will be ${waitTime} minutes at ${location} Topgolf.</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>lNNKHP</string>
 						<key>INIntentResponseCodeName</key>
@@ -84,23 +84,23 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>No wait time is available at ${location}.</string>
+						<string>Wait time is not availble for ${location}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
-						<string>SUo62h</string>
+						<string>Px2koH</string>
 						<key>INIntentResponseCodeName</key>
 						<string>waitTimeNotAvailable</string>
 						<key>INIntentResponseCodeSuccess</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>There is no Topgolf at given location.</string>
+						<string>The location is invalid</string>
 						<key>INIntentResponseCodeFormatStringID</key>
-						<string>kdjYw3</string>
+						<string>wgnAOs</string>
 						<key>INIntentResponseCodeName</key>
 						<string>invalidLocation</string>
 						<key>INIntentResponseCodeSuccess</key>
-						<true/>
+						<false/>
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>

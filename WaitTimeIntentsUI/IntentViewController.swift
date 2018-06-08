@@ -17,21 +17,34 @@ import IntentsUI
 
 class IntentViewController: UIViewController, INUIHostedViewControlling {
     
+    @IBOutlet weak var waitTimeLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
         
     // MARK: - INUIHostedViewControlling
     
     // Prepare your view controller for the interaction to handle.
-    func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
-        // Do configuration here, including preparing views and calculating a desired size for presentation.
+    func configureView(for parameters: Set<INParameter>,
+                       of interaction: INInteraction,
+                       interactiveBehavior: INUIInteractiveBehavior,
+                       context: INUIHostedViewContext,
+                       completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void)
+    {
+        switch interaction.intentResponse {
+        case let requestIntent as WaitTimeRequestIntent:
+            locationLabel.text = requestIntent.location
+        default:
+            return
+        }
         completion(true, parameters, self.desiredSize)
     }
     
     var desiredSize: CGSize {
-        return self.extensionContext!.hostedViewMaximumAllowedSize
+        let screenSize = UIScreen.main.bounds.size
+        return CGSize(width: screenSize.width, height: 150.0)
     }
     
 }

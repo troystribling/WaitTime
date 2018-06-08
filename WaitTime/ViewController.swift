@@ -40,12 +40,15 @@ class ViewController: UIViewController, UITextFieldDelegate, INUIAddVoiceShortcu
     }
     
     @IBAction func handleLocation() {
+        guard let location = waitTimeLocationTextField.text, !location.isEmpty else {
+            return
+        }
         let locationWaitTime = waitTime
-        let location = waitTimeLocationTextField.text?.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+        let stripedLocation = location.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
         waitTimeLocationTextField.resignFirstResponder()
         waitTimeLabel.text = String(locationWaitTime)
-        waitTimeLocationLabel.text = location
-        createWaitTimeRequestIntent(for: location, with: locationWaitTime)
+        waitTimeLocationLabel.text = stripedLocation
+        createWaitTimeRequestIntent(for: stripedLocation, with: locationWaitTime)
         waitTimeResultView.isHidden = false
         addSiriShortcutButton.isHidden = false
     }

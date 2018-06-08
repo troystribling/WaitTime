@@ -14,7 +14,7 @@ class IntentHandler: INExtension, WaitTimeRequestIntentHandling {
         return Int.random(in: 0..<90) as NSNumber
     }
     
-    let locationHasWaitTime = ["San Francisco, San Jose, Dallas"]
+    let locationHasWaitTime = ["San Francisco", "San Jose", "Dallas"]
 
     func handle(intent: WaitTimeRequestIntent, completion: @escaping (WaitTimeRequestIntentResponse) -> Swift.Void) {
         guard let location = intent.location else {

@@ -20,7 +20,7 @@
 		0588E52D20C87197001DA514 /* WaitTimeIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51420C87197001DA514 /* WaitTimeIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0588E53B20C8ACB9001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
 		0588E53C20C8ACBA001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
-		05E8FD2820C9E3A300EE517D /* WaitTimeIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05A0E92D20CB0F2C00F4019F /* WaitTimeIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				05E8FD2820C9E3A300EE517D /* WaitTimeIntentsUI.appex in Embed App Extensions */,
+				05A0E92D20CB0F2C00F4019F /* WaitTimeIntentsUI.appex in Embed App Extensions */,
 				0588E52D20C87197001DA514 /* WaitTimeIntents.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
