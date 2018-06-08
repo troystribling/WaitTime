@@ -34,8 +34,9 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
                        completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void)
     {
         switch interaction.intentResponse {
-        case let requestIntent as WaitTimeRequestIntent:
-            locationLabel.text = requestIntent.location
+        case let responseIntent as WaitTimeRequestIntentResponse:
+            locationLabel.text = responseIntent.location
+            waitTimeLabel.text = responseIntent.waitTime?.stringValue
         default:
             return
         }

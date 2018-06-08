@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054D56FE20CB3A4100B56210 /* WaitTimeIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0588E4FC20C865CE001DA514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588E4FB20C865CE001DA514 /* AppDelegate.swift */; };
 		0588E4FE20C865CE001DA514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588E4FD20C865CE001DA514 /* ViewController.swift */; };
 		0588E50120C865CE001DA514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0588E4FF20C865CE001DA514 /* Main.storyboard */; };
@@ -20,7 +21,8 @@
 		0588E52D20C87197001DA514 /* WaitTimeIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51420C87197001DA514 /* WaitTimeIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0588E53B20C8ACB9001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
 		0588E53C20C8ACBA001DA514 /* WaitTimeIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0588E50D20C86A6D001DA514 /* WaitTimeIntents.intentdefinition */; };
-		05A0E92D20CB0F2C00F4019F /* WaitTimeIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0588E51D20C87197001DA514 /* WaitTimeIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05A0E92F20CB2CEC00F4019F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A0E92E20CB2CEC00F4019F /* Media.xcassets */; };
+		05A0E93120CB322800F4019F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A0E93020CB322800F4019F /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				05A0E92D20CB0F2C00F4019F /* WaitTimeIntentsUI.appex in Embed App Extensions */,
+				054D56FE20CB3A4100B56210 /* WaitTimeIntentsUI.appex in Embed App Extensions */,
 				0588E52D20C87197001DA514 /* WaitTimeIntents.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -75,6 +77,8 @@
 		0588E52720C87197001DA514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0588E53720C898BC001DA514 /* WaitTimeIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimeIntents.entitlements; sourceTree = "<group>"; };
 		0588E53820C8993D001DA514 /* WaitTimeIntentsUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimeIntentsUI.entitlements; sourceTree = "<group>"; };
+		05A0E92E20CB2CEC00F4019F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		05A0E93020CB322800F4019F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A0E93120CB322800F4019F /* MapKit.framework in Frameworks */,
 				0588E52020C87197001DA514 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +157,7 @@
 		0588E51E20C87197001DA514 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05A0E93020CB322800F4019F /* MapKit.framework */,
 				0588E51F20C87197001DA514 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
@@ -164,6 +170,7 @@
 				0588E52220C87197001DA514 /* IntentViewController.swift */,
 				0588E52420C87197001DA514 /* MainInterface.storyboard */,
 				0588E52720C87197001DA514 /* Info.plist */,
+				05A0E92E20CB2CEC00F4019F /* Media.xcassets */,
 			);
 			path = WaitTimeIntentsUI;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A0E92F20CB2CEC00F4019F /* Media.xcassets in Resources */,
 				0588E52620C87197001DA514 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

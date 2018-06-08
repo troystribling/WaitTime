@@ -20,14 +20,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-Eu-Ebr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Topgolf" translatesAutoresizingMaskIntoConstraints="NO" id="wQD-OA-E3f">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wQD-OA-E3f">
                                         <rect key="frame" x="0.0" y="32.5" width="112" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wQD-OA-E3f" secondAttribute="height" multiplier="197:150" id="rZQ-Pt-75H"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-Hl-qQZ">
-                                        <rect key="frame" x="127" y="24" width="193" height="102.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-Hl-qQZ">
+                                        <rect key="frame" x="127" y="16.5" width="193" height="117.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The wait time to play Topgolf at" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkv-sy-acc" userLabel="Info">
                                                 <rect key="frame" x="15" y="0.0" width="163" height="41"/>
@@ -36,19 +36,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvh-S8-BfZ" userLabel="Location">
-                                                <rect key="frame" x="64" y="41" width="65.5" height="20.5"/>
+                                                <rect key="frame" x="64" y="46" width="65.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVq-yg-Hf8" userLabel="is">
-                                                <rect key="frame" x="90.5" y="61.5" width="12.5" height="20.5"/>
+                                                <rect key="frame" x="90.5" y="71.5" width="12.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bve-54-lUI">
-                                                <rect key="frame" x="40.5" y="82" width="112" height="20.5"/>
+                                                <rect key="frame" x="40.5" y="97" width="112" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlq-Be-7Wh" userLabel="waitTime">
                                                         <rect key="frame" x="0.0" y="0.0" width="49" height="20.5"/>
@@ -74,10 +74,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ubn-Eu-Ebr" secondAttribute="bottom" id="Fhx-tk-3Qu"/>
-                            <constraint firstItem="ubn-Eu-Ebr" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" id="KrE-Xa-H9l"/>
-                            <constraint firstItem="ubn-Eu-Ebr" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" id="O7j-W9-GvS"/>
-                            <constraint firstAttribute="trailing" secondItem="ubn-Eu-Ebr" secondAttribute="trailing" id="phB-HE-Lrf"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="bottom" secondItem="ubn-Eu-Ebr" secondAttribute="bottom" id="LG2-nM-WD6"/>
+                            <constraint firstItem="ubn-Eu-Ebr" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" id="LSg-IX-Ib9"/>
+                            <constraint firstItem="ubn-Eu-Ebr" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" id="fIF-J7-bCF"/>
+                            <constraint firstAttribute="trailing" secondItem="ubn-Eu-Ebr" secondAttribute="trailing" id="vCe-e0-d9c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
                     </view>
@@ -94,6 +94,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Topgolf" width="273" height="258"/>
+        <image name="Logo" width="273" height="258"/>
     </resources>
 </document>
